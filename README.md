@@ -5,6 +5,7 @@ Ihr müsst nen bisschen testen um die funktionierenden Weg zusehen.
 Die wichtigen Dateien sind eigentlich:
 
 models.py - SQL Datenbankersteller
+
 views.py  - komplette Backend Code
 
 Rest ist hauptsächlich für die Anzeige des Code im Web.
