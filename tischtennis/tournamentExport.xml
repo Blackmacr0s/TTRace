@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tournament SYSTEM "http://liga.nu/dtd/TournamentPortal.dtd">
+<tournament end-date="2018-10-24" multiple-participations-same-day="false" winning-sets="3" multiple-participations-same-time="false" start-date="2018-10-24" name="TTVN-Race 2018" table-count="8" tournament-id="cIld3VD3knHJCkL0Z1rCXXYCEg%2B0x%2F9d">
+	
+		<tournament-location city="Isernhagen" zip-code="30916" name="Halle Seestraße" street="Seestraße 8"/> 
+	
+		<tournament-location/> 
+	
+	
+		<competition start-date="2018-10-24 19:00" age-group="Damen/Herren" age-from="2004" max-persons="16" sex="gemischt" age-to="1898" type="Einzel" entry-fee="5.0" preliminary-round-playmode="Schweizer System">
+			<players>
+				
+					<player type="single" id="PLAYER1">
+						<person licence-nr="2192205239" lastname="Bautista" club-name="TuS Altwarmbüchen" sex="1" ttr-match-count="368" region="BV Hannover" club-federation-nickname="TTVN" ttr="1645" internal-nr="NU415888" foreigner-eq-state="false" firstname="Willy" nationality="ES" club-nr="2192205" birthyear="1971" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER2">
+						<person licence-nr="2205100301" lastname="Blazek" club-name="Badenstedter SC" sex="1" ttr-match-count="1464" region="BV Hannover" club-federation-nickname="TTVN" ttr="1612" internal-nr="NU462124" foreigner-eq-state="false" firstname="Martin" nationality="DE" club-nr="2205100" birthyear="1969" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER3">
+						<person licence-nr="2192205033" lastname="Bürge" club-name="TuS Altwarmbüchen" sex="1" ttr-match-count="506" region="BV Hannover" club-federation-nickname="TTVN" ttr="1583" internal-nr="NU118728" foreigner-eq-state="false" firstname="Lars" nationality="DE" club-nr="2192205" birthyear="1976" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER4">
+						<person licence-nr="2192715114" lastname="Czogalla" club-name="SSV Langenhagen" sex="1" ttr-match-count="1119" region="BV Hannover" club-federation-nickname="TTVN" ttr="1671" internal-nr="NU120748" foreigner-eq-state="false" firstname="Sebastian" nationality="DE" club-nr="2192715" birthyear="1977" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER5">
+						<person licence-nr="2192650193" lastname="Feuerhahn" club-name="TSV Krähenwinkel-Kaltenw." sex="1" ttr-match-count="654" region="BV Hannover" club-federation-nickname="TTVN" ttr="1584" internal-nr="NU1124363" foreigner-eq-state="false" firstname="Jan" nationality="DE" club-nr="2192650" birthyear="1994" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER6">
+						<person licence-nr="2192205259" lastname="Gehlhaar" club-name="TuS Altwarmbüchen" sex="1" ttr-match-count="654" region="BV Hannover" club-federation-nickname="TTVN" ttr="1459" internal-nr="NU102418" foreigner-eq-state="false" firstname="Uwe" nationality="DE" club-nr="2192205" birthyear="1961" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER7">
+						<person licence-nr="143033169" lastname="Happel" club-name="TTV Einigkeit Süchteln-Vorst" sex="1" ttr-match-count="98" region="Düsseldorf" club-federation-nickname="WTTV" ttr="1408" internal-nr="NU556350" foreigner-eq-state="false" firstname="Uwe" nationality="DE" club-nr="143033" birthyear="1970" sub-region="Mönchengladbach"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER8">
+						<person licence-nr="2241780237" lastname="Heppes" club-name="SG Rodenberg" sex="1" ttr-match-count="621" region="BV Hannover" club-federation-nickname="TTVN" ttr="1505" internal-nr="NU1622969" foreigner-eq-state="false" firstname="Peter" nationality="DE" club-nr="2241780" birthyear="1965" sub-region="Schaumburg"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER9">
+						<person licence-nr="2230380205" lastname="Juszczak" club-name="TuS Estorf-Leeseringen" sex="1" ttr-match-count="824" region="BV Hannover" club-federation-nickname="TTVN" ttr="1762" internal-nr="NU92796" foreigner-eq-state="false" firstname="Adam" nationality="DE" club-nr="2230380" birthyear="1979" sub-region="Nienburg"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER10">
+						<person licence-nr="2191310124" lastname="Karpenstein" club-name="TTC Otze" sex="1" ttr-match-count="1112" region="BV Hannover" club-federation-nickname="TTVN" ttr="1489" internal-nr="NU93995" foreigner-eq-state="false" firstname="Frank" nationality="DE" club-nr="2191310" birthyear="1967" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER11">
+						<person licence-nr="3312800142" lastname="Lüdemann" club-name="TuS Kirchwalsede" sex="1" ttr-match-count="971" region="BV Lüneburg" club-federation-nickname="TTVN" ttr="1729" internal-nr="NU191342" foreigner-eq-state="false" firstname="Dirk" nationality="DE" club-nr="3312800" birthyear="1996" sub-region="Rotenburg-Wümme"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER12">
+						<person licence-nr="2192205218" lastname="Rinne" club-name="TuS Altwarmbüchen" sex="1" ttr-match-count="2265" region="BV Hannover" club-federation-nickname="TTVN" ttr="1752" internal-nr="NU860168" foreigner-eq-state="false" firstname="Markus" nationality="DE" club-nr="2192205" birthyear="1997" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER13">
+						<person licence-nr="3255900076" lastname="Schmitz" club-name="MTV Oldendorf" sex="1" ttr-match-count="753" region="BV Lüneburg" club-federation-nickname="TTVN" ttr="1653" internal-nr="NU78436" foreigner-eq-state="false" firstname="Wolfgang" nationality="DE" club-nr="3255900" birthyear="1954" sub-region="Celle"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER14">
+						<person licence-nr="3351500200" lastname="Schumacher" club-name="TSV Emtinghausen" sex="1" ttr-match-count="398" region="BV Lüneburg" club-federation-nickname="TTVN" ttr="1538" internal-nr="NU1654530" foreigner-eq-state="false" firstname="Stefan" nationality="DE" club-nr="3351500" birthyear="1971" sub-region="Verden"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER15">
+						<person licence-nr="2191458222" lastname="Wittemann" club-name="TTK Großburgwedel" sex="1" ttr-match-count="1604" region="BV Hannover" club-federation-nickname="TTVN" ttr="1686" internal-nr="NU417203" foreigner-eq-state="false" firstname="Kevin" nationality="DE" club-nr="2191458" birthyear="1995" sub-region="Hannover"/>
+						 
+					</player>
+				
+					<player type="single" id="PLAYER16">
+						<person licence-nr="3257350246" lastname="Wyrwich" club-name="MTV Fichte Winsen" sex="1" ttr-match-count="574" region="BV Lüneburg" club-federation-nickname="TTVN" ttr="1702" internal-nr="NU607504" foreigner-eq-state="false" firstname="Christoph" nationality="DE" club-nr="3257350" birthyear="1996" sub-region="Celle"/>
+						 
+					</player>
+				
+			</players>
+		</competition>
+	
+</tournament>
