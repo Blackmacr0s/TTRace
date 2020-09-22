@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="table">
+    <table class="table table-striped table-hover" style="width: 800px; margin: 0px auto;">
+        <thead class="thead-dark">
+            <tr>
+                <th>Turnier</th>
+                <th>Ansehen</th>
+                <th>Löschen</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in turniere %}
+            <tr>
+                <td>{{ x.turnier_id }}</td>
+                <td><a href="{{ x.turnier_id }}/show"> Ansehen </a></td>
+                <td>{% if x.abgeschlossen == 0 %}<a href="{{ x.turnier_id }}/delete"> Löschen </a> {% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<br>
+<div class="table">
+    <table class="table table-striped table-hover" style="width: 800px; margin: 0px auto;">
+        <tbody>
+            <tr>
+        <form action="" method="post" novalidate>
+            {% if error %}
+            <font color=red>Turnier existiert schon.</font>
+            {% endif %}
+                {{ form.as_table }}
+            {% csrf_token %}
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

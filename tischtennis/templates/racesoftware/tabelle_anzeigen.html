@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<h1 class="text-center">Runde {{ runde }} <a href="../runde{{ runde }}/delete/"><img src="{% static "trash.svg" %}" width="25" height="25" class="align-center" alt="Loesche Runde {{ runde }}"></a></h1>
+<div class="table">
+    <table class="table table-striped table-hover" style="width: 800px; margin: 0px auto;">
+        <thead class="thead-dark">
+            <tr>
+                <th>Platz</th>
+                <th>Spieler</th>
+                <th>Bilanz</th>
+                <th>BHZ</th>
+                <th>fBHZ</th>
+                <th>Sätze</th>
+                <th>Bälle</th>
+            </tr>
+        </thead>
+        <tbody>
+      {% for r in tabelle %}
+            <tr>
+              <td>{{ forloop.counter }}</td>
+              <td>{{ r.lastname }}{{ r.internal_nr }}<br>{{ r.gegner }}</td>
+              <td>{{ r.siege }}:{{ r.niederlage }}</td>
+              <td>{{ r.buchholz }}</td>
+              <td>{{ r.feinbuchholz }}</td>
+              <td>{{ r.plussatz }}:{{ r.minussatz }} ({{ r.satzdif }})</td>
+              <td>{{ r.plusball }}:{{ r.minusball }} ({{ r.balldif }})</td>
+            </tr>
+
+      {% endfor %}
+        </tbody>
+    </table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}

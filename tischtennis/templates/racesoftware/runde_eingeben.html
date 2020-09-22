@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if naechste_runde %}
+{{naechste_runde}}
+<div class="container h-100">
+  <div class="row justify-content-center align-items-center">
+        Moechten Sie die Runde <a href="http://{{ url }}create/{{ naechste_runde | add:1 }}/">generieren</a>? Moechte noch jemand <a href="http://{{ url }}/teilnehmer/">aussteigen</a>?
+  </div>
+</div>
+{% else %}
+<!-- Hier muss noch ein dropdown hin, damit man zwischen den Runden Wechsel kann, -->
+<div align="center"><h1>Runde {{ runde }}:</h1></div>
+<div class="table">
+    <table class="table table-striped table-hover" style="width: 1000px; margin: 0px auto;">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tisch</th>
+                <th>Spieler 1</th>
+                <th>Spieler 2</th>
+                <th>Satz 1</th>
+                <th>Satz 2</th>
+                <th>Satz 3</th>
+                <th>Satz 4</th>
+                <th>Satz 5</th>
+                <th>Abschicken</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for key,value in printout.items %}
+        {% if value.printout3 == 'aus' %}<form action="http://{{ url }}{{ key }}/" method="post" novalidate>
+            {% csrf_token %}{% endif %}
+            <tr>
+                <td>{{ value.printout2.Tisch }}</td>
+                <td>{{ value.printout2.Spieler1 }}</td>
+                <td>{{ value.printout2.Spieler2 }}</td>
+                {% if value.printout3 == 'aus' %}
+                <td><input type="text" name="satz1" size="3" maxsize="3" required id="id_satz1"></td>
+                <td><input type="text" name="satz2" size="3" maxsize="3" required id="id_satz2"></td>
+                <td><input type="text" name="satz3" size="3" maxsize="3" required id="id_satz3"></td>
+                <td><input type="text" name="satz4" size="3" maxsize="3" id="id_satz4"></td>
+                <td><input type="text" name="satz5" size="3" maxsize="3" id="id_satz5"></td>
+                <td><input type="submit" value="Submit"></td>
+                {% endif %}
+                {% if value.printout3 == 'ein' %}
+                <td>{{ value.printout.0 }}</td>
+                <td>{{ value.printout.1 }}</td>
+                <td>{{ value.printout.2 }}</td>
+                <td>{{ value.printout.3 }}</td>
+                <td>{{ value.printout.4 }}</td>
+                <td>{{ value.printout.5 }} {% load static %}<a href="http://{{ url }}{{ key }}/edit/"><img src="{% static "trash.svg" %}" width="15" height="15" class="align-center" alt="Loesche Runde {{ runde }}"></a></td>
+                {% endif %}
+            </tr>
+        {% if value.printout3 == 'aus' %}</form>{% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}

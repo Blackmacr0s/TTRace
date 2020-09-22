@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<h1 class="text-center">Teilnehmerliste</h1>
+<div class="table">
+    <table class="table table-striped table-hover" style="width: 800px; margin: 0px auto;">
+        <thead class="thead-dark">
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Verein</th>
+                <th>TTR</th>
+                <th>Geburtsjahr</th>
+                <th>MyTT link</th>
+                <th>aufgehoert?</th>
+            </tr>
+        </thead>
+        <tbody>
+      {% for r in teilnehmer %}
+            <tr>
+              <td>{{ r.firstname }}</td>
+              <td>{{ r.lastname }}</td>
+              <td>{{ r.club_name }}</td>
+              <td>{{ r.ttr }}</td>
+              <td>{{ r.birthyear }}</td>
+              <td><a href="http://www.mytischtennis.de/id={{ myttid }}">MyTT</a></td>
+              <td>
+                {% if r.aufgehoert == None %}<form action="{{ r.id }}/{{ aufgehoert }}/" method="post" novalidate>{% csrf_token %}<input type="submit" value="aussteigen"></form> 
+                {% elif r.aufgehoert == aufgehoert %}<form action="{{ r.id }}/{{ aufgehoert }}/" method="post" novalidate>{% csrf_token %}<input type="submit" value="einsteigen"></form>
+                {% else %}Runde {{ r.aufgehoert }}{% endif %}
+              </td>
+            </tr>
+
+      {% endfor %}
+        </tbody>
+    </table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}
